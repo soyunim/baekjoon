@@ -13,8 +13,8 @@ int main(){
     }
 
     for(int i=0; multi>0; i++){
-        result = multi % 10;
-        arr[result]+=1;
+        result = multi % 10; //1의 자리가 뭔지 알 수 있음
+        arr[result]+=1; 
         multi/=10;
     }
 
