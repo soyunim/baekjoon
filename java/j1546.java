@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import java.uitl.Scanner;
+import java.util.Scanner;
 
 public class j1546{
     public static void main(String[] args){
@@ -8,7 +8,8 @@ public class j1546{
         double max=0.0;
         double ave=0.0;
         double result=0.0;
-        double sub[]=new double[1000]
+        double sub[]=new double[1000];
+        n=scan.nextInt();
         
         for(int i=0; i<n; i++){
             sub[i]=scan.nextInt();
