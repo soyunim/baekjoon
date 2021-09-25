@@ -2,7 +2,7 @@
 
 int main(){
     int c, n, sum=0, ave=0, cnt=0;
-    int score[n];
+    int score[n-1];
 
     scanf("%d",&c);
     for(int i=0; i<c; i++){
@@ -18,6 +18,10 @@ int main(){
             }
         }
         ave=cnt/n*100*1000/1000;
-        printf("%f",ave);
+        printf("%.3f%%\n",(double)ave);
+        sum=0;
+        ave=0;
+        cnt=0;
     }
+    return 0;
 }
