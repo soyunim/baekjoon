@@ -2,13 +2,14 @@
 
 int main(){
     int c, n, sum=0, ave=0, cnt=0;
-    int score[n-1];
+    int score[1000]={};
+    double average;
 
     scanf("%d",&c);
     for(int i=0; i<c; i++){
         scanf("%d",&n);
         for(int j=0; j<n; j++){
-            scanf("%d",score[j]);
+            scanf("%d",&score[j]);
             sum+=score[j];
         }
         ave=sum/n;
@@ -17,8 +18,8 @@ int main(){
                 cnt++;
             }
         }
-        ave=cnt/n*100*1000/1000;
-        printf("%.3f%%\n",(double)ave);
+        average=(double)cnt/n*100;
+        printf("%.3f%%\n",average);
         sum=0;
         ave=0;
         cnt=0;
