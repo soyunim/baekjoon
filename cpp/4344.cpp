@@ -3,8 +3,9 @@
 using namespace std;
 
 int main(){
-    int c, n, average, sum=0, ave=0, cnt=0;
-    int score[n]={0,};
+    int c, n, sum=0, ave=0, cnt=0;
+    int score[1000]={0};
+    double average;
     cin >> c;
     for(int i=0; i<c; i++){
         cin >> n;
@@ -18,8 +19,10 @@ int main(){
                 cnt++;
             }
         }
-        average=cnt/n*100;
-
+        average=(double)cnt/n*100;
+        
+        cout<<fixed;
+        cout.precision(3);
         cout << average << '%' <<'\n';
         ave=0;
         sum=0;
