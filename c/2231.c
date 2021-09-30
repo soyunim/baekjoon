@@ -1,10 +1,8 @@
-#include<iostream>
-
-using namespace std;
+#include<stdio.h>
 
 int main(){
     int n, temp, num;
-    cin >> n;
+    scanf("%d", &n);
 
     for(int i=1; i<n; i++){
         temp = i;
@@ -15,13 +13,13 @@ int main(){
         }
 
         if(num == n){
-            cout << i;
+            printf("%d",i);
             n=0;
             break;
         }
     }
-    if( n!= 0){
-        cout << 0;
+    if( n != 0){
+        printf(0);
     }
 
 }
